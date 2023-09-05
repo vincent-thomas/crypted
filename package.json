@@ -1,0 +1,32 @@
+{
+  "name": "tcrypt",
+  "version": "0.0.1-development",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vincent-thomas/tcrypt"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "test": "node --no-warnings --loader tsx --test tests.ts",
+    "build": "tsup",
+    "lint": "tsc",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "1.5.2",
+    "bformat": "latest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@types/node": "^20.5.9",
+    "husky": "^8.0.3",
+    "semantic-release": "^21.1.1",
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.8"
+  }
+}
