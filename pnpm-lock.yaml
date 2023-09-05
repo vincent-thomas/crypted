@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.5.2
     version: 1.5.2
   bformat:
-    specifier: latest
-    version: 0.1.1
+    specifier: 0.1.2
+    version: 0.1.2
 
 devDependencies:
   '@commitlint/cli':
@@ -1020,8 +1020,8 @@ packages:
     resolution: {integrity: sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ==}
     dev: true
 
-  /bformat@0.1.1:
-    resolution: {integrity: sha512-kyLd06fnTgmi97rRKPnAZ5eza5TByDmSZloPB8mp20tPV3awKEQY6IbMJJEnUA8EjX5/mjxTkrM1xXJrGsCvbw==}
+  /bformat@0.1.2:
+    resolution: {integrity: sha512-vhm4WpZvLcVMYEvDtUM6Cr1KZx3CdOdPEQUpNMxpHyiLiUXplq9WXIzpMg4K6monE15jherDA17lzARkBzE5ZA==}
     dependencies:
       zod: 3.22.2
     dev: false

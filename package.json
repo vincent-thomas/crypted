@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@node-rs/argon2": "1.5.2",
-    "bformat": "latest"
+    "bformat": "0.1.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
