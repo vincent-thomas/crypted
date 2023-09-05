@@ -60,7 +60,7 @@ jobs:
         run: |
           echo "Running pnpm install --frozen-lockfile"
           pnpm install --frozen-lockfile --ignore-scripts
-      
+      - run: pnpm run lint
       - run: pnpm run test
 
 
@@ -119,6 +119,7 @@ jobs:
           pnpm install --frozen-lockfile --ignore-scripts
       - name: Verify the integrity of provenance attestations and registry signatures
         run: npm audit signatures
+      - run: pnpm run lint
       - run: pnpm run build
       - run: pnpm run semantic-release
         env:
