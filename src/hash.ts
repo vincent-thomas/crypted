@@ -21,3 +21,6 @@ export const md5Verify = (textToCompare: string, hash: string, encoding: BinaryT
 
 export const sha256Hash = (text: string, defaultEncoding: BinaryToTextEncoding = DEFAULT_ENCODING) => createHash("sha256").update(text).digest(defaultEncoding);
 export const sha256Verify = (textToCompare: string, hash: string, encoding: BinaryToTextEncoding = DEFAULT_ENCODING) => createHash("sha256").update(textToCompare).digest(encoding) === hash;
+
+export const sha512Hash = (text: string, defaultEncoding: BinaryToTextEncoding = DEFAULT_ENCODING) => createHash("sha512").update(text).digest(defaultEncoding);
+export const sha512Verify = (textToCompare: string, hash: string, encoding: BinaryToTextEncoding = DEFAULT_ENCODING) => createHash("sha512").update(textToCompare).digest(encoding) === hash;

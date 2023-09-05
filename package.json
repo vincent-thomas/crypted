@@ -6,7 +6,7 @@
   "module": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincent-thomas/tcrypt"
+    "url": "https://github.com/vincent-thomas/crypted"
   },
   "files": ["dist", "README.md"],
   "scripts": {

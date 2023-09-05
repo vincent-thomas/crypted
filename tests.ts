@@ -1,7 +1,7 @@
 import { randomBytes } from "crypto";
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { createPasswordHash, decrypt, encrypt, md5Hash, md5Verify, sha256Hash, sha256Verify, verifyPasswordHash } from "./src";
+import { createPasswordHash, decrypt, encrypt, md5Hash, md5Verify, sha256Hash, sha256Verify, sha512Hash, sha512Verify, verifyPasswordHash } from "./src";
 
 describe("Encryption & Decryption", () => {
   it("Should format string with the utf-8 encoding to a buffer", () => {
@@ -35,6 +35,22 @@ describe("Hashing and comparing", () => {
     const TEXT = "this is a test";
     const hash = sha256Hash(TEXT);
     const result = sha256Verify(TEXT, hash);
+    assert(result);
+  });
+});
+
+describe("Hashing and comparing", () => {
+  it("SHA512 Algorithm", () => {
+    const TEXT = "this is a test";
+    const hash = sha256Hash(TEXT);
+    const result = sha256Verify(TEXT, hash);
+    assert(result);
+  });
+
+  it("SHA512 Algorithm", () => {
+    const TEXT = "this is a test";
+    const hash = sha512Hash(TEXT);
+    const result = sha512Verify(TEXT, hash);
     assert(result);
   });
 });
