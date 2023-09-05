@@ -1,1 +1,1 @@
-export default {extends: ['./node_modules/@commitlint/config-conventional']}
+export default { extends: ["./node_modules/@commitlint/config-conventional"] };
