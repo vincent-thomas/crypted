@@ -1,9 +1,7 @@
 import { randomBytes } from "crypto";
-import { decrypt } from "./src/decrypt";
-import { encrypt } from "./src/encrypt";
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { createPasswordHash, md5Hash, md5Verify, sha256Hash, sha256Verify, verifyPasswordHash } from "./src";
+import { createPasswordHash, decrypt, encrypt, md5Hash, md5Verify, sha256Hash, sha256Verify, verifyPasswordHash } from "./src";
 
 describe("Encryption & Decryption", () => {
   it("Should format string with the utf-8 encoding to a buffer", () => {

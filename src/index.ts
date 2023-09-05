@@ -1,3 +1,2 @@
-export * from "./encrypt";
-export * from "./decrypt";
+export * from "./crypto";
 export * from "./hash";
