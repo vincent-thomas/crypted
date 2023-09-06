@@ -9,6 +9,10 @@
     "type": "git",
     "url": "https://github.com/vincent-thomas/crypted"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "files": [
     "dist",
     "README.md"
